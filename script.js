@@ -11,6 +11,7 @@ answersTemp.push.apply(answersTemp, answers);
 const allWords = words.length;
 function randWord() {
 	$("#wordAnswer").css("color", "black");
+	$("#wordAnswer").css("color", "black");
 	if (countAll == allWords) { endGame(); return;}
 	let wordIndex = Math.floor(Math.random() * wordsTemp.length);
 	$("#word").val(wordsTemp[wordIndex]);
@@ -29,7 +30,7 @@ function boolWord() {
 		$("#wordAnswer").css("color", "#38a03c");
 	}
 	else {
-		$("#wordAnswer").css("color", "##c2111b");
+		$("#wordAnswer").css("color", "#c2111b");
     } 
 	$("#wordTF").text("True/False: " + countTrue + "/" + (countAll - countTrue));
 	flag = 0;
